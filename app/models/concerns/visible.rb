@@ -16,4 +16,10 @@ module Visible
   def archived?
     status == "archived"
   end
+
+  def visible_to?(a_user)
+    status == "public" or
+      not archived? or
+      (status == "private" and a_user == user)
+  end
 end
