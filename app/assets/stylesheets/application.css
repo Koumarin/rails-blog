@@ -13,3 +13,23 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+    padding-top: 40px;
+}
+
+#banner {
+    top:             0;
+    left:            0;
+    position:        fixed;
+    width:           100%;
+    padding:         10px 0px;
+    display:         flex;
+    justify-content: flex-end;
+    background:      #888;
+}
+
+#login-display {
+    display: flex;
+    padding: 0px 10px;
+}
