@@ -1,7 +1,9 @@
 <% if article.visible_to? current_user %>
-  <h1><%= link_to article.title, article %></h1>
+  <article class='article'>
+    <h1><%= link_to article.title, article %></h1>
 
-  <p>by <%= article.user.email %></p>
+    <p>by <%= article.user.email %></p>
 
-  <p><%= article.body %></p>
+    <p><%= article.body %></p>
+  </article>
 <% end %>
