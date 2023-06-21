@@ -29,6 +29,10 @@ body {
     background:      #888;
 }
 
+#banner a {
+    padding-right: 8px;
+}
+
 #login-display {
     display: flex;
     padding: 0px 10px;
