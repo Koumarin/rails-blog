@@ -1,7 +1,7 @@
 <header id="banner">
   <div id="login-display">
     <% if user_signed_in? %>
-      <%= current_user.email %>
+      <%= link_to current_user.email, current_user %>
       <%= button_to "Sign out", destroy_user_session_path, method: :delete %>
     <% else %>
       <%= button_to "Sign in", new_user_session_path %>
